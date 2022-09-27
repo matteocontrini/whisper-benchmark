@@ -1,0 +1,8 @@
+services:
+  whisper:
+    build: .
+    volumes:
+      - ./input:/input
+      - ./output:/output
+    environment:
+      - MODEL_NAME=base
