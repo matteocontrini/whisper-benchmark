@@ -36,7 +36,7 @@ def main():
     # Transcribe
     start = time.time()
     result = model.transcribe(INPUT_FILE_PATH, verbose=True)
-    print(f'Transcription took {humanize.naturaldelta(datetime.timedelta(seconds=time.time() - start))} ')
+    print(f'Transcription took {humanize.precisedelta(datetime.timedelta(seconds=time.time() - start))} ')
 
     # Save output
     with open(os.path.join(OUTPUT_DIR, f'{model_name}.json'), 'w') as f:
