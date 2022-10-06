@@ -5,4 +5,4 @@ services:
       - ./input:/input
       - ./output:/output
     environment:
-      - MODEL_NAME=base
+      - MODEL_NAME=large
